@@ -1,0 +1,155 @@
+#container {
+    width: 960px;
+    height: 1320px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    background-color: steelblue;
+}
+
+#header {
+    width: 920px;
+    height: 380px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: lightgray url("Images/dragon.jpg") no-repeat;
+}
+
+#header span {
+    font-size: 65px;
+    color: white;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 280px;
+}
+
+#navigation {
+    width: 960px;
+    height: 80px;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    background: #FF6347 url("Images/fire_background.jpg");
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav {
+    padding-top: 20px;
+    padding-left: 7px;
+}
+
+ul:after {
+    display: block;
+    content: '';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+    width: 105px;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: darkorange;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background-color: gold;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 220px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+ul.submenu > li:last-child > a {
+    border-bottom: 5px solid deepskyblue;
+}
+
+ul.submenu > li > a:hover {
+    color: deepskyblue;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+    z-index: 1;
+}
+
+#content {
+    width: 660px;
+    overflow: hidden;
+    height: 680px;
+    position: absolute;
+    top: 520px;
+    left: 20px;
+    background-color: mediumseagreen;
+}
+
+#sidebar {
+    width: 260px;
+    height: 720px;
+    position: absolute;
+    top: 500px;
+    right: 0;
+    background: deepskyblue url("Images/wolf.jpg");
+}
+
+#footer {
+    width: 960px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: darkslateblue;
+}
+
+#footer span{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+article {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+figure {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+
